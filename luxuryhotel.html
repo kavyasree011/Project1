@@ -1,0 +1,244 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/146/867/628/luxury-hotel-wallpaper-preview.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+        }
+
+   
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 15px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+       
+        .about {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            margin-right: 20px;
+        }
+
+        .about img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .about h2 {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+       
+        .rooms {
+            flex: 2;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .room {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        .room img {
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .room-details {
+            width: 45%;
+            padding: 20px;
+        }
+
+        .room-details h3 {
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .room-details p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .room-details .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #e67e22;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0;
+            }
+
+            .container {
+                flex-direction: column;
+                margin: 10px;
+            }
+
+            .about, .rooms {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .room {
+                flex-direction: column;
+            }
+
+            .room img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .room-details {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Luxury Hotel</h1>
+        <p>Your ultimate destination for relaxation and comfort</p>
+    </header>
+
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Rooms</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="about">
+            <img src="C:\Users\diguv\OneDrive\Desktop\web site\p1.jpg" alt="Hotel Image">
+            <h2>About Us</h2>
+            <p>Welcome to Luxury Hotel, where elegance meets comfort. Located in the heart of the city, we provide the finest services to ensure your stay is unforgettable. With spacious rooms, world-class amenities, and a team dedicated to excellence, your experience at Luxury Hotel will be nothing short of extraordinary.</p>
+        </section>
+
+        <section class="rooms">
+            <h2>Our Rooms</h2>
+            
+            <div class="room">
+                <img src="C:\Users\diguv\OneDrive\Desktop\web site\p2.jpg" alt="Room 1">
+                <div class="room-details">
+                    <h3>Deluxe Suite</h3>
+                    <p>Our Deluxe Suite offers a spacious and luxurious space with modern amenities, perfect for those seeking comfort and style.</p>
+                    <p class="price">$200 per night</p>
+                </div>
+            </div>
+            
+            <div class="room">
+                <img src="C:\Users\diguv\OneDrive\Desktop\web site\p3.jpeg" alt="Room 2">
+                <div class="room-details">
+                    <h3>Standard Room</h3>
+                    <p>A cozy and comfortable room, ideal for solo travelers or couples. Equipped with all essential amenities for a relaxing stay.</p>
+                    <p class="price">$120 per night</p>
+                </div>
+            </div>
+
+           
+            <div class="room">
+                <img src="C:\Users\diguv\OneDrive\Desktop\web site\p4.jpg" alt="Room 3">
+                <div class="room-details">
+                    <h3>Executive Suite</h3>
+                    <p>The Executive Suite is designed for guests who require extra space and comfort. It features a separate living area and luxury furnishings.</p>
+                    <p class="price">$300 per night</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Luxury Hotel | <a href="mailto:info@luxuryhotel.com">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
